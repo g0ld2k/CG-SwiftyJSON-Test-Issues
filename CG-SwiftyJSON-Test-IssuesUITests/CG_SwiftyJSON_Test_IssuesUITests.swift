@@ -31,6 +31,22 @@ class CG_SwiftyJSON_Test_IssuesUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        let pressMeButton = app.buttons["Press Me"]
+        pressMeButton.tap()
+        
+        let clearButton = app.buttons["Clear"]
+        clearButton.tap()
+        pressMeButton.tap()
+        clearButton.tap()
+        pressMeButton.tap()
+        clearButton.tap()
+        pressMeButton.tap()
+        clearButton.tap()
+        pressMeButton.tap()
+        clearButton.tap()
+        
     }
     
 }
